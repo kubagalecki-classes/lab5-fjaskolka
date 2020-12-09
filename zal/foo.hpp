@@ -9,7 +9,7 @@ using namespace std;
 vector< char > foo(list< Human >& people)
 {
 	vector<char> wektor;
-	for (vector<char> ra = people.rbegin(); ra != people.rend(); ra++) 
+	for (vector<char>::iterator ra = people.rbegin(); ra != people.rend(); ra++) 
 	{
 		ra->birthday();
 		if (ra->isMonster())
